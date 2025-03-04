@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Booking Form</title>
+    <style>
+        /* Global box-sizing for easier responsive sizing */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'cursive';
+            background-color: #062939;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: beige;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: lightgrey;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid blue;
+            color: aqua;
+            border-radius: 5px;
+            font-size: 16px;
+            background: transparent;
+        }
+
+        input[type="submit"] {
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #204d23;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            input,
+            select {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            input[type="submit"] {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            input,
+            select {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            input[type="submit"] {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Trainer Booking Form</h1>
+        <form method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone" name="phone" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="trainingtype">Training Type:</label>
+            <select id="trainingtype" name="trainingtype" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Sugam Singh [Head Instructor]</option>
+                <option>Khagendra Oli [Yoga]</option>
+                <option>Sabin Bist [Private Trainer]</option>
+                <option>Abinish Jaiswal [Private Trainer]</option>
+            </select>
+
+            <input type="submit" name="submit" value="Book Now">
+        </form>
+    </div>
+</body>
+
+</html>

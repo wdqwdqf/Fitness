@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Service Page - Fitness Zilla®</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* Global Styles */
+        body {
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #062939;
+        }
+
+        .navbar {
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20231228/pngtree-blue-hued-abstract-background-with-layered-black-overlaps-and-dark-texture-image_13903358.png");
+            background-position: center;
+            background-size: cover;
+            height: 15vh;
+        }
+
+        .container-fluid {
+            font-family: cursive;
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        .navbar-brand {
+            color: red;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+
+        .nav-item a {
+            color: whitesmoke;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .nav-item a:hover {
+            background-color: rgb(146, 98, 8);
+            border-radius: 40px;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(35, 35, 108, 0.821);
+        }
+
+        .text {
+            backdrop-filter: blur(4%) saturate(180%);
+            border-radius: 40px;
+            background: transparent;
+            border-color: #45a049;
+            border-width: 3px;
+            height: 8vh;
+            color: bisque;
+        }
+
+        ::placeholder {
+            color: #a94dcb;
+            font-size: large;
+        }
+
+        .btn {
+            background-color: #0d1c2c;
+            color: bisque;
+            border-radius: 50%;
+            height: 8vh;
+        }
+
+        .btn:hover {
+            color: red;
+            background-color: black;
+        }
+
+        /* Carousel Styles */
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            object-fit: cover;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        /* Info Slider Section */
+        .info-slider {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 20px 0;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .navbar {
+                text-align: center;
+                padding: 10px 0;
+                height: auto;
+                /* Allow the navbar height to adjust based on content */
+            }
+
+            .nav-item a,
+            .nav-link {
+                font-size: medium;
+            }
+
+            .text {
+                width: 100%;
+                margin-bottom: 10px;
+                height: auto;
+                /* Adjust height for mobile responsiveness */
+                padding: 10px;
+            }
+
+            .btn {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fitness Zilla®</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contactus.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Services.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="LoginForm.html">Login Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="RegistrationForm.html">Register</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Membership
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Membership.html">Membership Plan</a></li>
+                                <li><a class="dropdown-item" href="member.html">Trainer Booking Form</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="code" role="search">
+                        <input class="text" type="search" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Information Slider Section -->
+    <section class="info-slider py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Welcome to Fitness Zilla®</h2>
+                    <p>
+                        Fitness Zilla® is your ultimate destination for achieving your fitness goals. Whether you're
+                        seeking personalized training plans, experienced trainers, or engaging fitness classes, our
+                        platform is designed to empower you on your journey towards a healthier, stronger lifestyle.
+                        Explore our comprehensive range of services and join our vibrant community dedicated to wellness
+                        and transformation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="container my-4">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/177/652/desktop-wallpaper-fitness-group-women-gym.jpg"
+                        class="d-block w-100 img-fluid" alt="Slide 1" />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/177/652/desktop-wallpaper-fitness-group-women-gym.jpg"
+                        class="d-block w-100 img-fluid" alt="Slide 2" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fitness Zilla.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
